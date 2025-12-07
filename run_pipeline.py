@@ -104,9 +104,9 @@ class Config:
     RESULTS_DIR = "./results"
     
     # Model checkpoints
-    CLIP_CHECKPOINT = "/content/drive/MyDrive/best_64_0.0001_original_35000_0.864.pt"
-    GLOBAL_DECODER_CHECKPOINT = "/content/drive/MyDrive/checkpoints_global/global_decoder_epoch5.pt"
-    LOCAL_MODEL_CHECKPOINT = "/content/drive/MyDrive/checkpoints_local/stage2_final.pt"
+    CLIP_CHECKPOINT = "/checkpoints/best_64_0.0001_original_35000_0.864.pt"
+    GLOBAL_DECODER_CHECKPOINT = "/checkpoints/checkpoints_global/global_decoder_epoch5.pt"
+    LOCAL_MODEL_CHECKPOINT = "/checkpoints/MyDrive/checkpoints_local/stage2_final.pt"
     
     # Zero-shot pathologies
     PATHOLOGIES = ["Pneumonia", "Cardiomegaly", "Edema", "Pleural Effusion"]
@@ -622,4 +622,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n\n❌ Error: {str(e)}")
         import traceback
+
         traceback.print_exc()
