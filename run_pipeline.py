@@ -105,8 +105,8 @@ class Config:
     
     # Model checkpoints
     CLIP_CHECKPOINT = "/checkpoints/best_64_0.0001_original_35000_0.864.pt"
-    GLOBAL_DECODER_CHECKPOINT = "/checkpoints/checkpoints_global/global_decoder_epoch5.pt"
-    LOCAL_MODEL_CHECKPOINT = "/checkpoints/MyDrive/checkpoints_local/stage2_final.pt"
+    GLOBAL_DECODER_CHECKPOINT = "/checkpoints/global_decoder_epoch5.pt"
+    LOCAL_MODEL_CHECKPOINT = "/checkpoints//stage2_final.pt"
     
     # Zero-shot pathologies
     PATHOLOGIES = ["Pneumonia", "Cardiomegaly", "Edema", "Pleural Effusion"]
@@ -624,3 +624,4 @@ if __name__ == "__main__":
         import traceback
 
         traceback.print_exc()
+
